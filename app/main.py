@@ -7,8 +7,8 @@ from typing import List
 import uuid
 import json
 import asyncio
-from models import *
-from utils import *
+from app.models import *
+from app.utils import *
 
 # Initialize FastAPI app
 app = FastAPI(title="Food Delivery System API")
