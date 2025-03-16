@@ -1,7 +1,7 @@
 # Add these imports at the top of your file
 from fastapi import WebSocket, Depends
 from typing import Dict, List
-from models import UserRole, UserModel, Session, get_db
+from app.models import UserRole, UserModel, Session, get_db
 
 
 class ConnectionManager:

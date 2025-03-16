@@ -1,4 +1,4 @@
-from models import *
+from app.models import *
 from passlib.context import CryptContext
 from datetime import datetime, timedelta
 import jwt

@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException, status, WebSocket, WebSocketDisconnect
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
-from consumers import ConnectionManager
+from app.consumers import ConnectionManager
 
 from typing import List
 import uuid
