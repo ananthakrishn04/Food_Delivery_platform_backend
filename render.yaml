@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: food-delivery-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app-test.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: DATABASE_URL
+        sync: false # Will be added in Render dashboard
+      - key: SECRET_KEY
+        generateValue: true # Will generate a random value on first deploy 
